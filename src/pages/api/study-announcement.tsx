@@ -30,7 +30,7 @@ export default async function handler(req: NextRequest) {
         hour: '2-digit',
         minute: '2-digit',
       });
-    } catch (e) {
+    } catch {
       displayDate = new Date().toLocaleString('ko-KR', {
         year: 'numeric',
         month: 'long',
